@@ -1,4 +1,4 @@
-// Remember to console log test each function. 
+// Remember to console log test each function.
 
 // Global variables - to link HTML elements 
 const buttons = document.querySelectorAll('button') // selects all html <button> elements 
