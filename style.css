@@ -1,0 +1,150 @@
+/* Overall formatting to <body> */
+
+body {
+    min-height: 100vh; /* ensures body covers entire screen at min */
+    background-image: linear-gradient(135deg, DarkSeaGreen 10%, black 90%);   
+      
+    text-align: center; /* aligns all text in body to center */ 
+    
+    display: flex; /* aligns all elements within body to center */ 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    color: white; 
+  }
+  
+  
+  /* Calculator container */
+  .calculator-container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px; /* spacing between the containers */ 
+    
+    height: 550px;
+    width: 375px; 
+    
+    background-color: black;
+    border: 5px solid DarkSlateGray;
+    border-radius: 25px;
+    
+    margin: auto; /* centers our calculator container */
+    padding: 15px; 
+  }
+  
+  
+  /* Grid - number display - 1st row */
+  .number-display-container {
+    grid-row: 1;
+    
+    display: flex; /* goes with flex-direction, sets up flex box */
+    flex-direction: column; /* goes with display: flex, column fills up entire flex box as 1 column */
+    
+    justify-content: center; /* vertical alignment of the display*/
+  }
+  
+      .number-on-screen {
+        font-size: 60px; 
+        text-align: right;
+        color: white;
+        
+        height: 75px; 
+        width: 96%; /* need to set width, otherwise will spill */
+        
+  
+        background-color: black;
+        border-radius: 10px;
+        border: none;  /* change red to check */ 
+    
+        
+      }
+  
+  
+  
+  /* Grid - number pad - 2nd, 3rd, 4th, 5th row */
+  .number-pad-container {
+    grid-row: 2 / 7;
+      
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+        
+    column-gap: 10px; /* spacing between the buttons - vertically */ 
+    row-gap: 10px;  /* spacing between the buttons - horizontally */ 
+  }
+  
+    .pad-button {
+      border-radius: 100px; /* rounding the buttons */ 
+      
+      font-size: 40px; 
+      color: #e6e6e6; 
+      background-color: #3c4043; 
+      
+      cursor: pointer; /* converts cursor to hand when on the button */
+      
+    }
+    
+      .pad-button:active,
+      .pad-button:hover {
+        color: white;
+        background-color: #242729; /* darken background, highlight text - https://www.w3schools.com/colors/colors_picker.asp */ 
+     
+        cursor: pointer; /* converts cursor to hand when on the button */
+  
+        transition: all .25s;
+        transition-timing-function: ease-in;
+        }
+      
+  
+    .pad-button-color {
+      border-radius: 100px; /* rounding the buttons */ 
+      
+      font-size: 40px; 
+      color: #e6e6e6; 
+      background-color: MediumSeaGreen; 
+      
+      cursor: pointer; /* converts cursor to hand when on the button */
+      
+    }
+  
+      .pad-button-color:active,
+      .pad-button-color:hover {
+        color: white; 
+        background-color: #20603d; /* darken background, highlight text - https://www.w3schools.com/colors/colors_picker.asp */ 
+        
+        transition: all .25s;
+        transition-timing-function: ease-in;
+  
+      }
+  
+      #pad-button-equal-sign {
+        grid-column: 4; 
+      }
+  
+  /* Grid - credits n clear - 6th last row */
+  
+  .credits-container {
+    grid-column: 1/4; 
+    
+    color: white; 
+    font-size: 20px; 
+    
+    margin: auto; /* centers the contents to middle */
+  }
+  
+    .credits-container a {
+    color: white; 
+    text-decoration: none; /* to get rid of the underline */
+  }
+  
+      #iVuDang-link:active,
+      #iVuDang-link:hover {
+        color: MediumSeaGreen;    
+        text-decoration: none;
+        filter: drop-shadow(4px 4px 20px #40e0d0);  
+        
+        transition: all .5s;
+        transition-timing-function: ease-in-out;
+      }
+  
+  

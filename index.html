@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Adam Cordova - The Odin Project - Calculator"> 
+  <meta name="keywords" content="Adam Cordova, The Odin Project, Calculator">
+  <metaname="author" content="Adam Cordova">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!-- Appears when linking on social media -->
+  <meta property='og:title' content='Adam Cordova - Calculator'/>
+  <meta property='og:image' content='https://i.imgur.com/1vjHzwW.jpeg'/> <!-- REPLACE -->
+  <meta property='og:description' content='Adam Cordova - Calculator'/>
+  <meta property='og:url' content='https://github.com/leruseadam'/>
+  <meta property="og:type" content="website" />  
+  
+  <!-- Appears on tab title  --> 
+  <title>Adam Cordova - Calculator </title>
+    
+  <!-- Link to CSS file --> 
+  <link href="style.css" rel="stylesheet">
+</head>
+  
+  
+<body>
+  <!-- Title of Project --> 
+  <div class = 'project-name'> 
+    <h1> Calculator </h1>
+  </div> 
+  
+  <!-- Calculator container --> 
+  <div class = 'calculator-container'> 
+  
+    <!-- Grid - number display - 1st row -->
+    <div class="number-display-container">
+      <div class="number-on-screen"> 0 </div>
+    </div> 
+
+    <div class="number-pad-container">
+      <button class='pad-button'>7</button> <!-- <button> the SPACES here MATTER </button> --> 
+      <button class='pad-button'>8</button>
+      <button class='pad-button'>9</button>
+      <button class='pad-button-color'>÷</button>
+      
+      <button class='pad-button'>4</button>
+      <button class='pad-button'>5</button>
+      <button class='pad-button'>6</button>
+      <button class='pad-button-color'>x</button>
+      
+      <button class='pad-button'>1</button>
+      <button class='pad-button'>2</button>
+      <button class='pad-button'>3</button>
+      <button class='pad-button-color'>-</button>
+      
+      <button class='pad-button'>0</button>
+      <button class='pad-button'>.</button>
+      <button class='pad-button'>AC</button>
+      <button class='pad-button-color'>+</button>
+      
+      <!-- Grid - credits - 6th last row --> 
+      <div class="credits-container"> 
+          Created by 
+          Adam Cordova
+        </a>
+      </div>   
+      
+      <button class='pad-button-color' id='pad-button-equal-sign'>=</button>
+    </div> <!-- END 'number-pad-container' -->
+  </div> <!-- END 'calculator-container' -->
+</body>
+  
+  
+<footer>
+  <!-- Link to JavaScript file - at end to improve page load speed --> 
+  <script src="script.js"></script>
+</footer>
+  
+</html>
